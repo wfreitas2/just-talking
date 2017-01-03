@@ -81,6 +81,7 @@
                 e.preventDefault();
                 socket.emit('send message', $message.val());
                 $message.val('');
+                $message.focus();
             });
 
             socket.on('new message', function(data) {
