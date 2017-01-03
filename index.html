@@ -65,6 +65,7 @@
     <script type="text/javascript">
         function clearChat(){
           $('#chat').empty();
+          $('#message').focus();
         }
         $(function() {
             var socket = io.connect();
